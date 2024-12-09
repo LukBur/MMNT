@@ -1,0 +1,61 @@
+/* ------------------------------------------------------------ */
+/* IMPORTANT:                                                   */
+/*      - both, C and C++ style comments are supported          */
+/*      - ALWAYS use "." (dot) when entering numbers!           */
+/*        For ex. instead of 20, put 20.0                       */
+/*      - Use same unit system for all values!                  */
+/* ------------------------------------------------------------ */
+
+
+bc:
+(
+  /*--- BOUNDARY ---*/
+  {
+    bcnum:1;
+    //symmetry:{};
+    normal_heat_flux:{flux = 0.0;};
+  },
+
+  /*--- BOUNDARY ---*/
+  {
+    bcnum:2;
+    //symmetry:{};
+    normal_heat_flux:{flux = 0.0;};
+  },
+
+  /*--- BOUNDARY ---*/
+  {
+    bcnum:3; //boundary number
+    isothermal:{temp = 0.0; };
+  },
+
+  /*--- BOUNDARY ---*/ 
+  {
+    bcnum:6;
+    //symmetry:{};
+    normal_heat_flux:{flux = 0.0;};
+  },
+
+  /*--- BOUNDARY ---*/ 
+  {
+    bcnum:5;
+    //symmetry:{};
+    normal_heat_flux:{flux = 0.0;};
+  },
+  
+  /*--- BOUNDARY ---*/ 
+  {
+    bcnum:9;
+    isothermal:{temp = 0.0; };
+  },
+  
+  /*--- BOUNDARY ---*/ 
+  {
+    bcnum:4;
+    //isothermal:{temp = 0.0; };
+    normal_heat_flux:{flux = 0.0;};
+  }
+
+);
+
+
